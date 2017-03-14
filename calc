@@ -1,0 +1,61 @@
+#!/usr/bin/python
+
+while True:
+
+  print("'add' to add 2 numbers")
+  print("'subtract' to subtract 2 numbers")
+  print("'multiply' to multiply 2 numbers")
+  print("'divide' to divide 2 numbers")
+  print("'square' to square up a number")
+  print("'quit' to end the program")
+  x = raw_input ("Choose one: ")
+
+  if x == "quit":
+    break
+
+  elif x == "add":
+    print
+    num1 = float(raw_input("Enter a number: "))
+    num2 = float(raw_input("Enter another number: "))
+    result = str(num1 + num2)
+    print("The result is: "+ result)
+    print
+
+  elif x == "subtract":
+    print
+    num1 = float(raw_input("Enter a number: "))
+    num2 = float(raw_input("Enter another number: "))
+    result = str(num1 - num2)
+    print("The result is: "+ result)
+    print
+
+  elif x == "multiply":
+    print
+    num1 = float(raw_input("Enter a number: "))
+    num2 = float(raw_input("Enter another number: "))
+    result = str(num1 * num2)
+    print("The result is: "+ result)
+    print
+
+  elif x == "divide":
+    print
+    num1 = float(raw_input("Enter a number: "))
+    num2 = float(raw_input("Enter another number: "))
+    while num2 == 0:
+      print("You can't divide with 0.")
+      num2 = float(raw_input("Enter another number: "))
+    result = str(num1 / num2)
+    print("The result is: "+ result)
+    print
+
+  elif x == "square":
+    print
+    num1 = int(raw_input("Enter a number: "))
+    result = str(num1 * num1)
+    print("The result is: "+ result)
+    print
+
+  else:
+    print
+    print("Unknown input.")
+    print
