@@ -50,7 +50,7 @@ while True:
 
   elif x == "square":
     print
-    num1 = int(raw_input("Enter a number: "))
+    num1 = float(raw_input("Enter a number: "))
     result = str(num1 * num1)
     print("The result is: "+ result)
     print
